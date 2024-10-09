@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Simple Login By Waqar</string>
+
+    <string name="password_visible">Password Visible</string>
+    <string name="password_hidden">Password Hidden</string>
+    <string name="login">Login</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="enter_password">Enter Password</string>
+
+</resources>
