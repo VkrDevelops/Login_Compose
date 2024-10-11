@@ -50,7 +50,7 @@ fun MainAppNavHost(
     NavHost(
         modifier = modifier,
         navController = navController,
-        startDestination = NavRoutes.Authenticated.Login.route
+        startDestination = NavRoutes.Authenticated.MainRoots.route
     ) {
         // Authenticated user flow screens
         mainNavGraph(navController = navController)

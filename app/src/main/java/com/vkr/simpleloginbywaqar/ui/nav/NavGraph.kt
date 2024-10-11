@@ -9,17 +9,17 @@ import com.vkr.simpleloginbywaqar.ui.screens.login.LoginScreen
 
 fun NavGraphBuilder.mainNavGraph(navController: NavController) {
     navigation(
-        route = NavRoutes.Authenticated.Dashboard.route,
+        route = NavRoutes.Authenticated.MainRoots.route,
         startDestination = NavRoutes.Authenticated.Login.route
     ) {
         // Dashboard
         composable(route = NavRoutes.Authenticated.Dashboard.route) {
-            DashboardScreen()
+            DashboardScreen(onNavigateBack = {}, onNavigateToHomeRoute = {})
         }
 
         // Login
         composable(route = NavRoutes.Authenticated.Login.route) {
-            LoginScreen{}
+            LoginScreen {}
         }
     }
 }
