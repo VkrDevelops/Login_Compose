@@ -1,4 +1,4 @@
-package com.vkr.simpleloginbywaqar.ui.helpercomposables
+package com.vkr.simpleloginbywaqar.helpercomposables
 
 import androidx.compose.foundation.text.KeyboardActions
 import androidx.compose.foundation.text.KeyboardOptions

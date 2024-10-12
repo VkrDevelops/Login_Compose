@@ -1,4 +1,4 @@
-package com.vkr.simpleloginbywaqar.ui.helpercomposables
+package com.vkr.simpleloginbywaqar.helpercomposables
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Row

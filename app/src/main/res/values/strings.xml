@@ -7,5 +7,6 @@
     <string name="enter_email">Enter Email</string>
     <string name="enter_password">Enter Password</string>
     <string name="fetching_data_please_wait">Fetching data please wait...</string>
+    <string name="make_sure_you_have_an_active_data_connection">Make sure you have an active data connection</string>
 
 </resources>

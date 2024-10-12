@@ -1,4 +1,4 @@
-package com.vkr.simpleloginbywaqar.ui.screens.dashboard
+package com.vkr.simpleloginbywaqar.ui.dashboard
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -10,7 +10,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.material3.Text
 import androidx.compose.ui.unit.dp
-import com.vkr.simpleloginbywaqar.ui.data.AssociatedDrug
+import com.vkr.simpleloginbywaqar.data.AssociatedDrug
 
 @Composable
 fun DashBoardItem(medication: AssociatedDrug) {

@@ -1,13 +1,7 @@
-package com.vkr.simpleloginbywaqar.ui.data
+package com.vkr.simpleloginbywaqar.data
 
 import androidx.annotation.EmptySuper
 import com.google.gson.annotations.SerializedName
-
-data class LoginState(
-    val emailOrMobile: String = "",
-    val password: String = "",
-    val isLoginSuccessful: Boolean = false
-)
 
 data class Data(
     val problems: MutableList<Problem>? = mutableListOf()

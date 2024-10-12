@@ -1,6 +1,5 @@
-package com.vkr.simpleloginbywaqar.ui.screens.login
+package com.vkr.simpleloginbywaqar.ui.login
 
-import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
@@ -14,15 +13,14 @@ import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.input.ImeAction
 import com.vkr.simpleloginbywaqar.R
-import com.vkr.simpleloginbywaqar.ui.data.LoginState
-import com.vkr.simpleloginbywaqar.ui.helpercomposables.EmailTextField
-import com.vkr.simpleloginbywaqar.ui.helpercomposables.NormalButton
-import com.vkr.simpleloginbywaqar.ui.helpercomposables.PasswordTextField
+import com.vkr.simpleloginbywaqar.helpercomposables.EmailTextField
+import com.vkr.simpleloginbywaqar.helpercomposables.PasswordTextField
 import com.vkr.simpleloginbywaqar.ui.theme.AppTheme
 
 @Composable
 fun LoginFields(
-    loginState: LoginState,
+    email: String,
+    password: String,
     onEmailOrMobileChange: (String) -> Unit,
     onPasswordChange: (String) -> Unit,
     onSubmit: () -> Unit,
@@ -34,7 +32,7 @@ fun LoginFields(
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(top = AppTheme.dimens.paddingLarge),
-            value = loginState.emailOrMobile,
+            value = email,
             onValueChange = onEmailOrMobileChange,
             label = stringResource(id = R.string.enter_email),
         )
@@ -44,7 +42,7 @@ fun LoginFields(
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(top = AppTheme.dimens.paddingLarge),
-            value = loginState.password,
+            value = password,
             onValueChange = onPasswordChange,
             label = stringResource(id = R.string.enter_password),
             imeAction = ImeAction.Done
