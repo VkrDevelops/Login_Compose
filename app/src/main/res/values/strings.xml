@@ -6,5 +6,6 @@
     <string name="login">Login</string>
     <string name="enter_email">Enter Email</string>
     <string name="enter_password">Enter Password</string>
+    <string name="fetching_data_please_wait">Fetching data please wait...</string>
 
 </resources>

@@ -1,15 +1,16 @@
 package com.vkr.simpleloginbywaqar.ui.data
 
+import androidx.annotation.EmptySuper
 import com.google.gson.annotations.SerializedName
-
-data class Data(
-    val problems: MutableList<Problem>? = mutableListOf()
-)
 
 data class LoginState(
     val emailOrMobile: String = "",
     val password: String = "",
     val isLoginSuccessful: Boolean = false
+)
+
+data class Data(
+    val problems: MutableList<Problem>? = mutableListOf()
 )
 
 data class ClassName(
@@ -18,7 +19,7 @@ data class ClassName(
     val associatedDrug2: List<AssociatedDrug>
 )
 
-data class Asthma(val list: MutableList<String>? = mutableListOf())
+data class Asthma(val emptySuper: EmptySuper)
 
 
 data class AssociatedDrug(

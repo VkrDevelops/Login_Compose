@@ -112,7 +112,7 @@ fun LoginScreen(
                             onPasswordChange = { inputString ->
 
                             },
-                            onSubmit = {}
+                            onSubmit = {onNavigateToAuthenticatedRoute.invoke()}
                         )
                     }
                 }
